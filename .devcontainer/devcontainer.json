@@ -1,0 +1,24 @@
+{
+    "name": "Azure-Chaos-Engineering",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "TAG": "7.0.0-alpine-3.13"
+        }
+    },
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "zsh": {
+                "path": "/bin/zsh",
+                "args": []
+            }
+        }
+    },
+    "extensions": [
+        "ms-vscode.powershell"
+    ],
+    "runArgs": [
+        "--env-file",
+        "devcontainer.env"
+    ],
+}
